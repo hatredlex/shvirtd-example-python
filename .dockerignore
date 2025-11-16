@@ -25,6 +25,6 @@ nginx/
 *.swo
 README.md
 LICENSE
-schema.pdf
+*.pdf
 Dockerfile*
-*.txt
+*.sh
