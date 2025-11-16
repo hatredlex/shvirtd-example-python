@@ -28,8 +28,8 @@ services:
     container_name: db
     env_file:
       - .env
-    volumes:
-       - ./init-db.sh:/docker-entrypoint-initdb.d/init-db.sh:ro
+    environment:
+      MYSQL_ROOT_HOST: "%"
     networks:
       backend:
         ipv4_address: 172.20.0.10
