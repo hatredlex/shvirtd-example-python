@@ -28,6 +28,7 @@ services:
     container_name: db
     env_file:
       - .env
+    command: ["mysqld", "--mysql-native-password=ON"]
     networks:
       backend:
         ipv4_address: 172.20.0.10
